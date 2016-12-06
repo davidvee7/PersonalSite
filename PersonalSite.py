@@ -11,8 +11,8 @@ app.secret_key = "Y\xd5^\xa1{\xf3\n\xf7s\xedz\x945zM\xa0;&'\xd9.\xade"
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_SSL'] = True
-app.config['MAIL_USERNAME'] = 'joeracostawebsite@gmail.com'
-app.config['MAIL_PASSWORD'] = 'joeswebsite'
+app.config['MAIL_USERNAME'] = 'davidvinegar@gmail.com'
+app.config['MAIL_PASSWORD'] = 'daveswebsite'
 
 mail = Mail(app)
 
@@ -29,8 +29,8 @@ def contact():
         return 'Error. All fields not filled in'
     else:
         msg = Message("Message from your visitor" + form.name.data,
-                      sender='joeracostawebsite@gmail.com',
-                      recipients=['joe@joeracosta.com'])
+                      sender='davidvinegarwebsite@gmail.com',
+                      recipients=['david@davidvinegar.com'])
         msg.body = """
             From: %s <%s>,
             %s
